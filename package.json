@@ -1,0 +1,24 @@
+{
+  "name": "microfe-esm-browser",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently npm:dev:*",
+    "dev:shell": "vite --port 3000",
+    "dev:app-1": "vite app-1 --port 3001",
+    "dev:app-2": "vite app-2 --port 3002",
+    "build": "concurrently npm:build:*",
+    "build:shell": "vite build",
+    "build:app-1": "vite build app-1",
+    "build:app-2": "vite build app-2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "vite": "^5.0.8"
+  }
+}
